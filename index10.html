@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listener</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(177, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div>Box</div>
+    <button id="btn">Action</button>
+
+    <script>
+
+       let box = document.querySelector("div")
+       let btn = document.querySelector("#btn")
+
+       function Action(){
+        box.classList.toggle("container")
+       }
+
+       btn.addEventListener("click",Action)
+       
+    </script>
+</body>
+</html>

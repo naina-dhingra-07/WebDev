@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List</title>
+</head>
+<body>
+    <div id="id1" class="class1"></div>
+    <div id="id2"></div>
+    <div id="id3" class="remove-me"></div>
+    <div class="class4"></div>
+    <script>
+        let div1 = document.querySelector("#id1")
+        div1.classList.remove("class1")
+
+        let div2 = document.querySelector("#id2")
+        div2.classList.add("class2")
+
+        let div3 = document.querySelector("#id3")
+        div3.classList.toggle("class3")
+        div3.classList.toggle("remove-me")
+
+        let div4 = document.querySelector(".class4")
+        let abc =  div4.classList.contains("class4")
+
+        console.log(div1)
+        console.log(div2)
+        console.log(div3)
+        console.log(abc)
+    </script>
+</body>
+</html>

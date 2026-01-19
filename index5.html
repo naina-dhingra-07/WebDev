@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body>
+    
+    <script>
+        let list = document.createElement("ul")
+        document.body.appendChild(list)
+
+        let item1 = document.createElement("li")
+        list.appendChild(item1)
+        item1.innerText = "item1"
+        
+        let item2 = document.createElement("li")
+        list.appendChild(item2)
+        item2.innerText = "item2"
+
+        let item3 = document.createElement("li")
+        list.appendChild(item3)
+        item3.innerText = "item3"
+
+        console.log(list)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+</head>
+<body>
+    <script>
+        let btn = document.createElement("button")
+        document.body.appendChild(btn)
+        btn.innerHTML =  "Click to add Item"
+
+        let list = document.createElement("ul")
+        document.body.appendChild(list)
+        
+        function print(){
+            let item = document.createElement("li")
+            item.innerText = "Item"
+            list.appendChild(item)
+        }
+
+        btn.addEventListener("click", print)
+
+    </script>
+</body>
+</html>

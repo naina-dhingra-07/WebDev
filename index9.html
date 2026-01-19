@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listener</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(177, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div>Box</div>
+    <button id="btn1">Add Style</button>
+    <button id="btn2">Remover Style</button>
+
+    <script>
+
+       let box = document.querySelector("div")
+       let btn1 = document.querySelector("#btn1")
+       let btn2 = document.querySelector("#btn2")
+
+       function AddStyle(){
+        box.classList.add("container")
+       }
+
+       function RemoveStyle(){
+        box.classList.remove("container")
+       }
+
+       btn1.addEventListener("click",AddStyle)
+       btn2.addEventListener("click",RemoveStyle)
+    </script>
+</body>
+</html>
