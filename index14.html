@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event propagation : bubling</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <button class="btn">click</button>
+        </div>
+    </div>
+
+    <script>
+        let outer = document.querySelector(".parent")
+        let inner = document.querySelector(".child")
+        let btn = document.querySelector(".btn")
+
+        outer.addEventListener("click", function(){
+            alert("parent clicked")
+        }
+        )
+
+        inner.addEventListener("click", function(){
+            alert("child clicked")
+        }
+        )
+
+        btn.addEventListener("click", function(){
+            alert("btn clicked")
+        }
+        )
+    </script>
+</body>
+</html>
